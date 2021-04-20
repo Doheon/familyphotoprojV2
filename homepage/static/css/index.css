@@ -1,0 +1,53 @@
+/* div{
+    border: 1px solid red;
+} */
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(242, 242, 242);
+}
+
+.home{
+    font-weight: bold;
+    display: inline-block;
+    font-size: 23px;
+}
+
+.header{
+    font-family:Verdana;
+    margin: 0;
+    text-align: left;
+    color: white;
+    background-color: rgb(62, 62, 62);
+    padding:20px;
+    padding-left: 70px;
+}
+
+@media(max-width:830px){
+    .contents{
+        width:830px;
+    }
+}
+
+
+/* loader */
+@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+
+
+#loading {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255,255,255,.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
