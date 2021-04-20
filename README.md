@@ -18,15 +18,17 @@ Object Detection을 이용하여 이전 버전보다 성능이 대폭 상승하�
 4. 해당 얼굴의 정확도가 기준치보다 높다면 있음, 낮다면 없다고 판단
 5. 있다고 판단된 얼굴만 추출하고 결과를 보여줌
 
+&nbsp;
 
 
 
-
-## 화면
+## 동작화면
 
 | ![3](README.assets/3.png) | ![4](README.assets/4.png) |
 | :-----------------------: | :-----------------------: |
 |      시작 인터페이스      |     사진 첨부시 화면      |
+
+&nbsp;
 
 
 
@@ -36,7 +38,7 @@ Object Detection을 이용하여 이전 버전보다 성능이 대폭 상승하�
 
 위의 사진을 보면 가족 4명을 모두 잘 예측한 것을 확인할 수 있다.  
 
-
+&nbsp;
 
 
 
@@ -46,7 +48,7 @@ Object Detection을 이용하여 이전 버전보다 성능이 대폭 상승하�
 
 위의 결과를 보면 독사진도 잘 분류하고, 외부인은 잘 제외한 것을 확인할 수 있다.  
 
-
+&nbsp;
 
 
 
@@ -73,7 +75,7 @@ Object Detection을 이용하여 이전 버전보다 성능이 대폭 상승하�
 
 처음에는 face detector가 아니라 person detector로 진행하였으나 효과가 좋지 않아서 face detector로 다시 진행하였다.  
 
-
+&nbsp;
 
 ### Face Detector
 
@@ -83,7 +85,7 @@ Object Detection을 이용하여 이전 버전보다 성능이 대폭 상승하�
 2. [roboflow](https://roboflow.com/)를 이용하여 label을 coco format으로 변환
 3. detectron2의 faster_rcnn을 이용하여 face의 클래스만 가지는 object detector 학습
 
-
+&nbsp;
 
 ### Multi-Label Classifer  
 
@@ -116,8 +118,6 @@ Object Detection을 이용하여 이전 버전보다 성능이 대폭 상승하�
 - loss가 적절히 수렴할때 까지 epoch를 조절하면서 훈련을 진행하였다.
 
 &nbsp;
-
-
 
 # Predict
 
