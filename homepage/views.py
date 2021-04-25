@@ -5,6 +5,7 @@ from django.views.decorators.csrf import csrf_exempt
 
 
 import torch
+from torch.nn.functional import threshold
 import torchvision
 # from .forms import UploadFileForm
 from django.core.files.storage import FileSystemStorage
@@ -73,12 +74,13 @@ def predict(src):
     name = ['엄마','아빠','나','누나']
 
     li = []
+    threshold = 0.8
     for i in range(4):
         dic = {}
         dic["name"] = name[i]
         print(result[maxindex[i]][i])
         path = "/static/image/result/"
-        if result[maxindex[i]][i] < 1:
+        if result[maxindex[i]][i] < threshold:
             cv2.imwrite("./homepage{}{}.png".format(path,i),np.ones((30,30,3), np.uint8)*100)
             dic["prob"] = 0
         else:
