@@ -10,7 +10,7 @@ Object Detection을 이용하여 이전 버전보다 성능이 대폭 상승하�
 
 &nbsp;  
 
-Object Detection 모델로는 Faster RCNN을 사용하였는데 가족사진에서 같은 사람이 여러명일 수는 없다는 정보를 직접적으로 이용하고 정확도를 높이기 위해 이 모델에 사람이름으로 라벨링해서 한번에 학습 시키지 않고 face detecter로만 학습을 시켰고, 그 후에  resNet을 이용해서 classification을 진행하였다.  
+Object Detection 모델로는 Faster RCNN을 사용하였는데 가족사진에서 같은 사람이 여러명일 수는 없다는 정보를 직접적으로 이용하고 정확도를 높이기 위해 사람이름으로 라벨링해서 한번에 학습 시키지 않고 face detector로만 학습을 시켰고, 그 후에  resNet을 이용해서 classification을 진행하였다.  
 
 &nbsp;  
 
