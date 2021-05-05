@@ -161,8 +161,3 @@ Thumbs.db
 *.pth
 
 *.DS_Store
-
-
-#result
-result/
-media/
