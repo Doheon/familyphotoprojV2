@@ -10,7 +10,7 @@ Object Detection을 이용하여 이전 버전보다 성능이 대폭 상승하�
 
 
 
-**FamilyPhoto_Runserver.ipynb** 파일을 colab에서 실행하면 프로젝트를 배포하고 배포된 사이트를 직접 이용해 볼 수 있다.  
+[FamilyPhoto_Runserver.ipynb](FamilyPhoto_Runserver.ipynb) 파일을 colab에서 실행하면 프로젝트를 배포하고 배포된 사이트를 직접 이용해 볼 수 있다.  
 
 
 
